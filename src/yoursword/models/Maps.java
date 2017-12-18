@@ -11,7 +11,8 @@ package yoursword.models;
  */
 public class Maps {
 	//TODO replace location with adventure.
-	Locations data = new Locations();
+	//Locations data = new Locations();
+	NodeList data = new NodeList("YourSword.ysa");
 	Graph<String> map = new UnweightedGraph<>(data.placeNames, data.paths);
 
 	public void printCurrentLocation(int index) {

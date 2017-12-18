@@ -1,39 +1,13 @@
-LOCATIONS
-Gates 
-Forest
-Grave_Yard
-Toren's_House
-Docks
-Tavern
-Stables
-Marketplace
-Arena
-Inn
-Farm_House
-Castle
-PATHS
-Forest, Toren's_House, Tavern
-Gates, Grave_Yard, Toren's_House
-Forest, Toren's_House, Docks, Arena
-Gates, Forest, Grave_Yard, Docks, Tavern
-Gates, Forest, Tavern, Marketplace, Arena, Farm_House
-Gates, Toren's_House, Grave_Yard, Docks, Tavern
-Gates, Toren's_House, Docks, Stables, Marketplace
-Tavern, Marketplace
-Docks, Tavern, Stables, Arena
-Docks, Marketplace, Inn, Farm_House, Castle
-Stables, Inn
-Grave_Yard, Docks, Arena, Inn
-Arena, Inn, Farm_House
-DESCRIPTIONS
+Gates,Forest,Toren's_House,Tavern
 The gates to the city. Nothing unusual here except that they're 
 new. Everyone pictures gates in medevil times as being old 
 rusted looking things. They had to be new once and these are.,
 ###
+Forest,Gates,Grave_Yard,Toren's_House
 The Forest is a thing of legend. Spanning for unknown distances 
 to the east, it's massive trees providing a thick canopy causing the
 forest floor below to exist in a perpetual twilight. There is always
-a faint glow emanating from the various biolumanecent plant life.
+a faint glow emanating from the various bioluminecent plant life.
 with a little time it's possible see through the darkness.
 There exits patches where there is no light at all.
 ###

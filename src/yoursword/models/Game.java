@@ -16,7 +16,7 @@ public class Game {
 	Maps map;
 	Avatar player;
 	Scanner input = new Scanner(System.in);
-	Adventure adventure = new Adventure();
+	//NodeList adventure = new NodeList("MySword.ysa");
 	
 	
 	public Game() {
