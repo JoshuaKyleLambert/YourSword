@@ -12,9 +12,21 @@ package yoursword.models;
 public class Maps {
 	//TODO replace location with adventure.
 	//Locations data = new Locations();
-	NodeList data = new NodeList("YourSword.ysa");
-	Graph<String> map = new UnweightedGraph<>(data.placeNames, data.paths);
+	NodeList data;
+	Graph<String> map;
 
+	public Maps(){
+		this.data = new NodeList("YourAdventure.ysa");
+		this.map = new UnweightedGraph<>(data.placeNames, data.paths);
+		
+	}
+		
+	public Maps(String filename){
+		this.data = new NodeList(filename);
+		this.map = new UnweightedGraph<>(data.placeNames, data.paths);
+
+	}
+	
 	public void printCurrentLocation(int index) {
 		
 		System.out.println("\nYour current Location is " + data.getPlaceName(index));
