@@ -23,12 +23,20 @@ public class Game {
 		map = new Maps();
 		System.out.print("Player, What is your name? ");
 		String name = input.next();
+		String filepath;
 
 		while (name.length() > 12) {
 			System.out.print("Player, What is your (short) name? ");
 			name = input.next();
 		}
 
+		//System.out.print("Load adventure? D for default.");
+		//	filepath = input.next();
+			
+		//	if (filepath.equals("D"))
+				map = new Maps();
+		//	else map = new Maps(filepath);
+		
 		System.out.println("Welcome to\n\n-----====|8--  My Sword  --8|====-----\n\n"
 			+ name + " your adventure is about to begin.\n\n"
 			+ "Type \"help\" for some useful information.\n\n");
