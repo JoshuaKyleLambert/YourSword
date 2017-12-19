@@ -31,7 +31,8 @@ public class NodeList {
 	String[] descriptions;
 	int[][] paths;
 	int numberOfnodes;
-
+	int numberOfpaths;
+	
 	public NodeList(String filename) {
 		nodes = new ArrayList<>();
 		
@@ -61,19 +62,35 @@ public class NodeList {
 	public int[][] paths() {
 		//list of all the edges using indexes instead of names	
 		//ArrayList<String> tempEdges = new ArrayList<>();
-		int[][] temppaths = new int[numberOfnodes][2];
-
+		
+		ArrayList<String> tempEdges = new ArrayList<>();
+		ArrayList<Integer> edgeCount = new ArrayList<>();
 		for (int i = 0; i < numberOfnodes; i++) {
-			ArrayList<String> tempEdges = new ArrayList<>();
+			edgeCount.add(nodes.get(i).getEdgecount());
 			tempEdges.addAll(nodes.get(i).getEdges());
 
-			for (int j = 0; j < tempEdges.size(); j++) {
-				temppaths[i][0] = i;
-				temppaths[i][j] = nodes.indexOf(tempEdges.get(j));
+		}
+		
+		this.numberOfpaths = tempEdges.size();
+		int[][] temppaths = new int[tempEdges.size()][2];
+		int counter = 0;
+		for(int i = 0; i < numberOfpaths && counter < edgeCount.size(); i += edgeCount.get(counter++)){
+			for(int j = 0; j < edgeCount.get(counter); j++){
+				
+				temppaths[i + j][0] = counter;
+				temppaths[i + j][1] = Arrays.asList(placeNames).indexOf(tempEdges.get(counter));
+				
+				
 			}
-
+			
 		}
 
+			
+		
+		
+		
+		
+		
 		return temppaths;
 	}
 
@@ -103,7 +120,7 @@ public class NodeList {
 			StringBuilder description = new StringBuilder();
 				tokens = fileRead.split(",");
 
-				edges = Arrays.copyOfRange(tokens, 1, tokens.length - 1); // edge list
+				edges = Arrays.copyOfRange(tokens, 1, tokens.length); // edge list
 //				for (int i = 1; i < tokens.length; i++) {
 //
 //					newNode.addEdge(tokens[i]);

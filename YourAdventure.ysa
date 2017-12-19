@@ -3,11 +3,17 @@ The gates to the city. Nothing unusual here except that they're
 new. Everyone pictures gates in medevil times as being old 
 rusted looking things. They had to be new once and these are.,
 ###
-Forest,Gates,Grave_Yard,Toren's_House
+Forest,Gates,Toren's_House,Tavern
 The Forest is a thing of legend. Spanning for unknown distances 
 to the east, it's massive trees providing a thick canopy causing the
 forest floor below to exist in a perpetual twilight. There is always
 a faint glow emanating from the various bioluminecent plant life.
 with a little time it's possible see through the darkness.
 There exits patches where there is no light at all.
+###
+Tavern,Forest,Toren's_House
+This place is a real shit hole.
+###
+Toren's_House,Forest,Gates,Tavern
+Torens House is the place to be apparently.
 ###
