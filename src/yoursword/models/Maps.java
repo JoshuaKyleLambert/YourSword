@@ -16,7 +16,7 @@ public class Maps {
 	Graph<String> map;
 
 	public Maps(){
-		this.data = new NodeList("YourAdventure.ysa");
+		this.data = new NodeList("YourAdventure.txt");
 		this.map = new UnweightedGraph<>(data.placeNames, data.paths);
 		
 	}
