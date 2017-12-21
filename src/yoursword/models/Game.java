@@ -69,11 +69,11 @@ public class Game {
 	private void prompt() {
 		String command;
 		status();
-		System.out.print("What do you do? ");
+		System.out.print(ConsoleColors.RED + "What do you do? " + ConsoleColors.RESET);
 
 		command = input.next();
 		while (doIfCommand(command) || command.length() > 24 || map.travelTo(command) == -1) {
-			System.out.print("What do you do? ");
+			System.out.print(ConsoleColors.RED + "What do you do? " + ConsoleColors.RESET);
 			command = input.next();
 		}
 		clearScreen();
