@@ -4,18 +4,18 @@
 
 Current Ability:
 ----------------
--Write a story using "AdventureScript" . 
+-Write a story using "AdventureScript" .  
 -Load a human readable / writeable adventure file.  
 -Navigate from section to section.  
 -Each section has a description which is displayed using "look" and reachable locations from there.  
 -Display current location and reachable locations.  
 -Display a status with health armor and magic, Help, inventory   
--Some Rudimentary system for accepting commands (Blocking ?)
+-Some Rudimentary system for accepting commands (Blocking ?)  
 -Use items from inventory.  
 
 ToDo:
 ------------
--More ability to control reachable locations. ie add and remove edges from the graph.
+-More ability to control reachable locations. ie add and remove edges from the graph.  
 -Items at locations.  
 -NPCs at locations.  
 -Some rudimentary interaction for NPC’s and items.   
