@@ -9,9 +9,8 @@ Current Ability:
 -Navigate from section to section.  
 -Each section has a description which is displayed using "look" and reachable locations from there.  
 -Display current location and reachable locations.  
--Display a status with health armor and magic  
--Display inventory  
--Display Help  
+-Display a status with health armor and magic, Help, inventory   
+-Some Rudimentary system for accepting commands (Blocking ?)
 
 
 ToDo:
