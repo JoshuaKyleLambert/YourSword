@@ -11,7 +11,7 @@ Current Ability:
 -Display current location and reachable locations.  
 -Display a status with health armor and magic, Help, inventory   
 -Some Rudimentary system for accepting commands (Blocking ?)
-
+-Use items from inventory.  
 
 ToDo:
 ------------
@@ -20,7 +20,6 @@ ToDo:
 -NPCs at locations.  
 -Some rudimentary interaction for NPC’s and items.   
 -Ability to add “paths” and items to locations through item/location/npc interactions.  
--Use items from inventory  
 -Better display for inventory  
 -Ability to add / remove / use items from inventory.  
 -A battle( Damage or repair, hit or miss) some armor or class system. Randomization.  
