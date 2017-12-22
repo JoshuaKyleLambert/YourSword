@@ -69,11 +69,11 @@ public class Game {
 	private void prompt() {
 		String command;
 		status();
-		System.out.print(ConsoleColors.RED + "What do you do? " + ConsoleColors.RESET);
+		System.out.print("What do you do? ");
 
 		command = input.next();
 		while (doIfCommand(command) || command.length() > 24 || map.travelTo(command) == -1) {
-			System.out.print(ConsoleColors.RED + "What do you do? " + ConsoleColors.RESET);
+			System.out.print("What do you do? ");
 			command = input.next();
 		}
 		clearScreen();
@@ -88,6 +88,10 @@ public class Game {
 		}
 	}
 
+	
+	
+	
+	
 	private boolean doIfCommand(String command) {
 		switch (command) {
 			case "quit":
@@ -108,7 +112,13 @@ public class Game {
 				player.listInventory();
 				break;
 			case "use":
-				//	useItem();
+				System.out.println("Use What?");
+				command = input.next();
+				Item item = player.inventory.get(command);
+				if(item != null)
+					item.use(player);
+				else
+					System.out.print("You look around and swear you had " + command + ".");
 				break;
 			case "look":
 				clearScreen();

@@ -6,6 +6,9 @@
 package yoursword.models;
 
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import yoursword.items.Water;
 
 /**
  *
@@ -17,12 +20,12 @@ public class Avatar {
 	private int health = 100;
 	private int armor = 100;
 	private int magic = 100;
-	ArrayList<Item> inventory = new ArrayList<>();
+	Map<String, Item> inventory = new LinkedHashMap<>();
 	UnweightedGraph<Locations> map = new UnweightedGraph<>();
 	int currentLocation = 0;  // Location is the index # in the graph.
 
 	public Avatar(String name) {
-		inventory.add(new Item("Water", 5, "Cool and refreshing"));
+		inventory.put("Water", new Water("Water", 5, "Cool and refreshing"));
 		this.setName(name);
 	}
 
@@ -48,14 +51,6 @@ public class Avatar {
 
 	public void setMagic(int magic) {
 		this.magic = magic;
-	}
-
-	public ArrayList<Item> getInventory() {
-		return inventory;
-	}
-
-	public void setInventory(ArrayList<Item> inventory) {
-		this.inventory = inventory;
 	}
 
 	public UnweightedGraph<Locations> getMap() {
@@ -92,8 +87,10 @@ public class Avatar {
 		this.name = name;
 	}
 
-	public void listInventory(){
+	public void listInventory() {
 		System.out.println("You have: ");
-		getInventory().forEach((e) -> System.out.println(e.getQuantity() + " " + e.getName() +" "+ e.getDescription()));
+		inventory.entrySet().forEach((each) -> {
+			System.out.println(each.getValue() + "  " + each.getKey());
+		}); //getInventory().forEach((e) -> System.out.println(e.getQuantity() + " " + e.getName() +" "+ e.getDescription()));
 	}
 }

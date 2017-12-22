@@ -9,18 +9,28 @@ package yoursword.models;
  *
  * @author joshua
  */
-public class Item {
+public abstract class Item {
 
 	private String name;
 	private Integer quantity;
 	private String description;
 
-	public Item(String name, Integer quantity, String description) {
+	/**
+	 *
+	 * @param name
+	 * @param quantity
+	 * @param description
+	 */
+	protected Item(String name, Integer quantity, String description) {
 		this.name = name;
 		this.quantity = quantity;
 		this.description = description;
 	}
 
+	public abstract void use(Avatar o);
+	public abstract void use();
+		
+	
 	public String getDescription() {
 		return description;
 	}
@@ -45,4 +55,12 @@ public class Item {
 		this.quantity = quantity;
 	}
 
+	@Override
+	public String toString() {
+		return quantity + "  " + description;
+	}
+	
+	
+
+	
 }
