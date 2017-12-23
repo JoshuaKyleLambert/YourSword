@@ -18,7 +18,7 @@ is formatted to be easy to read and write, for anyone with a text editor. The fi
   * Extend Item to make items for use.This needs work
 
 ToDo
-----
+-----
   * Make item usage make sense.
   * More ability to control reachable locations. ie add and remove edges from the graph.  
   * Items at locations.  
