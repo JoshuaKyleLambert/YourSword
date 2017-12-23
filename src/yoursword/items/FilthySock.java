@@ -20,8 +20,6 @@ public class FilthySock extends Item{
 			+ " biologically active, dont eat this.");
 	}
 
-	
-
 	/**
 	 * Generic use method for water and one for the Avatar
 	 */
@@ -31,7 +29,7 @@ public class FilthySock extends Item{
 	}
 	
 	@Override
-	public void use(Avatar player) {
+	public void useOn(Avatar player) {
 		int quant = getQuantity();
 		if (quant == 0) {
 			System.out.println("You dont have");

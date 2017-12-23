@@ -14,8 +14,8 @@ import yoursword.models.ConsoleColors;
  */
 public class Water extends Item {
 	
-	public Water(String name, Integer quantity, String description) {
-		super(name, quantity, description);
+	public Water(Integer quantity) {
+		super("Water", quantity, "Cool, refreshing and better than nothing.");
 	}
 	
 	/**
@@ -27,10 +27,10 @@ public class Water extends Item {
 	}
 	
 	@Override
-	public void use(Avatar player) {
+	public void useOn(Avatar player) {
 		int quant = getQuantity();
 		if (quant == 0) {
-			System.out.println("Looks like you're out of Water");
+			System.out.println("Looks like you're out of Water.");
 		} else {
 			System.out.println("The water revitalizes you." + ConsoleColors.GREEN + " +15 health" + ConsoleColors.RESET);
 			int health = player.getHealth();

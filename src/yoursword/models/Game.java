@@ -34,14 +34,14 @@ public class Game {
 		//	filepath = input.next();
 			
 		//	if (filepath.equals("D"))
-				map = new Maps();
+				//map = new Maps();
 		//	else map = new Maps(filepath);
 		
 		System.out.println("Welcome to\n\n-----====|8--  My Sword  --8|====-----\n\n"
 			+ name + " your adventure is about to begin.\n\n"
 			+ "Type \"help\" for some useful information.\n\n");
 
-		player = new Avatar(name);
+		player = new Avatar(name); // Create the player with a name
 		player.setCurrentLocation(0);
 
 		map.printCurrentLocation(player.getCurrentLocation());
@@ -116,7 +116,7 @@ public class Game {
 				command = input.next();
 				Item item = player.inventory.get(command);
 				if(item != null)
-					item.use(player);
+					item.useOn(player);
 				else
 					System.out.print("You look around and swear you had " + command + ".");
 				break;

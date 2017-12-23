@@ -27,8 +27,13 @@ public abstract class Item {
 		this.description = description;
 	}
 
-	public abstract void use(Avatar o);
+	protected Item(Integer quantity){
+		this.quantity = quantity;
+	}
+	
+	public abstract void useOn(Avatar o);
 	public abstract void use();
+	
 		
 	
 	public String getDescription() {
@@ -60,7 +65,7 @@ public abstract class Item {
 		return quantity + "  " + description;
 	}
 	
-	
+
 
 	
 }

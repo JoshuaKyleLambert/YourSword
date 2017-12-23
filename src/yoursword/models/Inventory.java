@@ -7,6 +7,7 @@ package yoursword.models;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.Set;
 
 /**
  *
@@ -14,21 +15,21 @@ import java.util.Map;
  */
 public class Inventory {
 
-	private Map<String, Item> LinkedHashMap;
+	private Map<String, Item> invList;
 
 	public Inventory() {
 		//Create a empty inventory with room for 8 grows to 16 
 		//with 6 items because of .75 load factor.
-		LinkedHashMap = new LinkedHashMap<>(8, .75f);
-		//items = new LinkedHashMap<>();
+		invList = new LinkedHashMap<>(8, .75f);
+		//items = new invList<>();
 
 	}
 
 	public Inventory(Item item) {
 		//Create an inventory with 1 item room for 7 grows to 16 
 		//with 6 items because of .75 load factor.
-		LinkedHashMap = new LinkedHashMap<>(8, 0.75f);
-		LinkedHashMap.put(item.getName(), item);
+		invList = new LinkedHashMap<>(8, 0.75f);
+		invList.put(item.getName(), item);
 
 	}
 
@@ -38,22 +39,22 @@ public class Inventory {
 	 *
 	 */
 	public void put(Item item) {
-		if (LinkedHashMap.containsKey(item.getName())) {
-			Item inventoryItem = LinkedHashMap.get(item.getName());
+		if (invList.containsKey(item.getName())) {
+			Item inventoryItem = invList.get(item.getName());
 			int qty = inventoryItem.getQuantity();
 
 			inventoryItem.setQuantity(qty + item.getQuantity());
 
 		} else {
-			put(item);
+			invList.put(item.getName(),item);
 		}
 
 		System.out.println(item.getQuantity() + " " + item.getName() + " added to inventory.");
 	}
 
 	public void remove(Item item) {
-		if (LinkedHashMap.containsKey(item.getName())) {
-			Item inventoryItem = LinkedHashMap.get(item.getName());
+		if (invList.containsKey(item.getName())) {
+			Item inventoryItem = invList.get(item.getName());
 			int qty = inventoryItem.getQuantity();
 
 			if (qty - item.getQuantity() <= 0) {
@@ -67,4 +68,16 @@ public class Inventory {
 		}
 
 	}
+	
+	public Item get(String itemName){
+		return invList.get(itemName);
+	}
+
+	public Set getentrySet() {
+		return invList.entrySet();
+	}
+	
+
+	
+	
 }
