@@ -22,7 +22,7 @@ public class Avatar {
 	private int armor = 100;
 	private int magic = 100;
 	Inventory inventory = new Inventory();
-	UnweightedGraph<Locations> map = new UnweightedGraph<>();
+	//UnweightedGraph<Locations> map = new UnweightedGraph<>();
 	int currentLocation = 0;  // Location is the index # in the graph.
 
 	public Avatar(String name) {
@@ -57,13 +57,13 @@ public class Avatar {
 		this.magic = magic;
 	}
 
-	public UnweightedGraph<Locations> getMap() {
-		return map;
-	}
+//	public UnweightedGraph<Locations> getMap() {
+//		return map;
+//	}
 
-	public void setMap(UnweightedGraph<Locations> map) {
-		this.map = map;
-	}
+//	public void setMap(UnweightedGraph<Locations> map) {
+//		this.map = map;
+//	}
 
 	public int getCurrentLocation() {
 		return currentLocation;

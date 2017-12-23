@@ -9,9 +9,9 @@ package yoursword.models;
  *
  * @author joshua
  */
-public class Locations {
+public class LocationsDep {
 
-	public Locations(){
+	public LocationsDep(){
 		
 	}
 	
