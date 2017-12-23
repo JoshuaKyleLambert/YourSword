@@ -133,7 +133,7 @@ public class Game {
 			case "look":
 				clearScreen();
 				System.out.println("\n" + map.look(player.getCurrentLocation()) 
-                                        + "\n Items here:  \n" );
+                                        + "\nItems here:  \n" );
                                 map.printItems(player.getCurrentLocation());
 				break;
 			case "where":

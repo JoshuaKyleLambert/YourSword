@@ -96,7 +96,8 @@ public class Avatar {
 		Set<Map.Entry<String, Item>> list = inventory.getentrySet();
 		
 		for(Map.Entry<String, Item> entry: list){
-			System.out.println(entry.getValue() + "  " + entry.getKey());
+			//System.out.println(entry.getValue() + "  " + entry.getKey());
+                        System.out.println(entry.getValue());
 		}
 		
 		//inventory.getentrySet().forEach((each) -> {

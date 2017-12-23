@@ -112,6 +112,7 @@ public class NodeList {
 			while (fileRead != null) {
 				StringBuilder description = new StringBuilder();
 				tokens = fileRead.split(",");
+                                fileRead = input.readLine();
                                 items = fileRead.split(",");
                                 
 				edges = Arrays.copyOfRange(tokens, 1, tokens.length); // edge list
