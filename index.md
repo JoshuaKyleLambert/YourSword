@@ -3,7 +3,7 @@
 ---
 
 Current Abilities
-----------------
+-----------------
   * Write a story using "AdventureScript" . Or whatever you want to call the emerging file         type.    
   * Load a human readable / writeable adventure file. The adventure file
 is formatted to be easy to read and write, for anyone with a text editor. The first word of the first line of a new section in the file names the place or area you describe in the following lines before the ###. The next words on first line, separated by spaces indicate the places this area or section connects too. This first line is all the information that is needed to build the adjaceny list for the graph that controls the underlying structure of the adventure.  
