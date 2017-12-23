@@ -60,5 +60,13 @@ public class Maps {
 	public String look(int location){
 		return data.getDescription(location);
 	}
+        /*Can't list items at other locations
+        * or can you?
+        */
+        
+        public void printItems(int location){
+            data.getItemList(location).forEach(e -> System.out.println(e));
+
+        }
 }
 

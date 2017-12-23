@@ -82,6 +82,10 @@ public class NodeList {
 
 		return temppaths;
 	}
+        
+        public ArrayList<Item> getItemList(int index){
+            return nodes.get(index).itemList();
+        }
 
 	public String getDescription(int index) {
 
@@ -103,12 +107,13 @@ public class NodeList {
 			BufferedReader input = new BufferedReader(new FileReader(filename));
 
 			String[] edges;
-
+                        String[] items;
 			String fileRead = input.readLine();
 			while (fileRead != null) {
 				StringBuilder description = new StringBuilder();
 				tokens = fileRead.split(",");
-
+                                items = fileRead.split(",");
+                                
 				edges = Arrays.copyOfRange(tokens, 1, tokens.length); // edge list
 
 				fileRead = input.readLine();
@@ -118,8 +123,9 @@ public class NodeList {
 					fileRead = input.readLine();
 
 				}
-				Node newNode = new Node(tokens[0], edges, description.toString());  // node name
-				fileRead = input.readLine();
+				Node newNode = new Node(tokens[0], edges, description.toString(),items);  // node name
+				
+                                fileRead = input.readLine();
 				newNodesList.add(newNode);
 
 			}
