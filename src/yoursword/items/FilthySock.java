@@ -21,7 +21,7 @@ public class FilthySock extends Item{
 	}
 
 	/**
-	 * Generic use method for water and one for the Avatar
+	 * Generic use 
 	 */
 	@Override
 	public void use(){
