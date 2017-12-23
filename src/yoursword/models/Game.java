@@ -69,13 +69,23 @@ public class Game {
 	private void prompt() {
 		String command;
 		status();
+		
+		
+		/*
+		The Big Question....
+		
+		*/
 		System.out.print("What do you do? ");
-
 		command = input.next();
+		
+		//Pickup a command or a map location and disregard long input.
+		//Read while 
 		while (doIfCommand(command) || command.length() > 24 || map.travelTo(command) == -1) {
 			System.out.print("What do you do? ");
 			command = input.next();
 		}
+		
+		
 		clearScreen();
 		player.setCurrentLocation(map.travelTo(command));
 		map.printCurrentLocation(player.getCurrentLocation());
@@ -107,7 +117,7 @@ public class Game {
 			case "status":
 				status();
 				break;
-			case "inventory":
+			case "inv":
 				clearScreen();
 				player.listInventory();
 				break;

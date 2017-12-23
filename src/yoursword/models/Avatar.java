@@ -29,7 +29,7 @@ public class Avatar {
 
 		Item item = new Water(5);
 
-		inventory.put( item); // give 5 water to start.
+		inventory.put( item ); // give 5 water to start.
 		this.name = name;
 	}
 
