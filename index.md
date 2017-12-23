@@ -12,6 +12,7 @@ Current Ability:
 -Display a status with health armor and magic, Help, inventory   
 -Some Rudimentary system for accepting commands (Blocking ?)  
 -Use items from inventory.  
+-Rudiments of an inventory system.
 
 ToDo:
 ------------
