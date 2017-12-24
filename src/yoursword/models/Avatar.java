@@ -94,6 +94,10 @@ public class Avatar {
 
     }
 
+    public Inventory getInventory() {
+        return inventory;
+    }
+    
     public void give(Item item) {
         //inventory.put(item.getName(), item);
 

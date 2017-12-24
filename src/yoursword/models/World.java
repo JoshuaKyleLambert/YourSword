@@ -69,11 +69,12 @@ public class World {
      *
      * Drop an item onto the world location
      *
-     * @param Location world location to drop to
+     * @param location
      * @param itemName item to drop
      */
-    public void drop(int Location, String itemName) {
-
+    public void leave(int location, Item item) {
+       // Item item = data.getNodeInventory(location).get(itemName);
+        data.getNodeInventory(location).put(item);
     }
 
     public String look(int location) {

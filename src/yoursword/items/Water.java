@@ -36,6 +36,9 @@ public class Water extends Item {
 			int health = player.getHealth();
 			player.setHealth(health + 15);
 			setQuantity(--quant);
+                        if(quant == 0){
+                            player.getInventory().remove(this);
+                        }
 		}
 	}
 	

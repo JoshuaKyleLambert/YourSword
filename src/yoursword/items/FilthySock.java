@@ -32,12 +32,15 @@ public class FilthySock extends Item{
 	public void useOn(Avatar player) {
 		int quant = getQuantity();
 		if (quant == 0) {
-			System.out.println("You dont have");
+			System.out.println("Looks like you're out of Filthy Socks.");
 		} else {
-			System.out.println("The water revitalizes you." + ConsoleColors.GREEN + " +15 health" + ConsoleColors.RESET);
+			System.out.println("The sock smells so bad you begin to convulse. You drop the sock." + ConsoleColors.RED + " -1 health" + ConsoleColors.RESET);
 			int health = player.getHealth();
-			player.setHealth(health + 15);
+			player.setHealth(health - 1);
 			setQuantity(--quant);
+                        if(quant == 0){
+                            player.getInventory().remove(this);
+                        }
 		}
 	}
 	

@@ -106,7 +106,13 @@ public class Game {
 
         
     }
-
+    /**
+     * The doIfCommand method captures user input.  The knot that ties interaction
+     * and objects together is here.
+     * 
+     * @param command
+     * @return 
+     */
     private boolean doIfCommand(String command) {
         switch (command) {
             case "quit":
@@ -115,7 +121,7 @@ public class Game {
             case "help":
                 clearScreen();
                 System.out.println("\n\nAvailable commands are:\n"
-                        + "inventory, use, look, status and where.\n\n"
+                        + "inv, use, look, status, where, take, drop and quit.\n\n"
                         + "To travel to a new location type its name.\n"
                         + "You do not have to follow the path, but that defeats the point.\n\n");
                 break;
@@ -153,7 +159,15 @@ public class Game {
                 }
                 break;
             case "drop":
-
+                System.out.println("Drop what?");
+                item = player.getInventory().get(command = input.next());
+                if (item != null){
+                    player.getInventory().remove(item);
+                map.leave(player.getCurrentLocation(), item);
+                } else {
+                    System.out.println("You cannot drop " + command + " if you don't have " + command + ".");
+                }
+                
                 break;
             case "where":
                 clearScreen();
