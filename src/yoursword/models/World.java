@@ -5,10 +5,6 @@
  */
 package yoursword.models;
 
-import java.util.ArrayList;
-import java.util.Map;
-import java.util.Set;
-
 /**
  *
  * @author joshua
@@ -42,14 +38,6 @@ public class World {
 
         System.out.println("\n");
 
-//		System.out.println("The number of vertices in graph1: " + map.getSize());
-//
-//		System.out.println("The vertex with index 1 is "
-//			+ map.getVertex(1));
-//		System.out.println("The index for Miami is "
-//			+ map.getIndex("Miami"));
-//		System.out.println("The edges for graph1:");
-//		map.printEdges();
     }
 
     /**

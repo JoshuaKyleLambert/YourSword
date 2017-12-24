@@ -121,9 +121,12 @@ public class Inventory {
         Set<Map.Entry<String, Item>> entrySet = invList.entrySet();
         StringBuilder string = new StringBuilder();
         StringBuilder returnstring = new StringBuilder();
+      
         // Get key and value from each entry
         for (Map.Entry<String, Item> entry : entrySet) {
-            string.append(entry.getValue().getQuantity()).append("  ").append(entry.getValue().getDescription()).append(" ").append(entry.getKey());
+            string.append(entry.getValue().getQuantity()).append("  ")
+                    .append(entry.getValue().getDescription()).append(" ")
+                    .append(entry.getKey());
             System.out.println(string.toString());
 
             returnstring.append(string).append("\n");
@@ -131,6 +134,6 @@ public class Inventory {
 
         }
 
-        return string.toString();
+        return returnstring.toString();
     }
 }
