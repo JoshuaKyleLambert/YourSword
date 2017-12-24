@@ -2,8 +2,8 @@
 Graph based text exploration.
 -----------------------------
 A a fun project to learn software and narrative development.
-Goal: Make it fun.
-------------------
+Goal: Make it fun and learn something.
+
 
 Current Abilities
 -----------------
