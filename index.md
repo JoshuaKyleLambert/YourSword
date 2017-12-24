@@ -17,11 +17,12 @@ Current Abilities
   * Rudiments of an inventory system allowing the addition and removal of items.  
   * Extend item to make items available for use (this feature still needs some work).
   * Nodes can be created with items in them from the adventurescript file.
+  * Can now "take" items from a location node and place them in inventory.
 
 To Do
 -----
   * Make item usage make sense. 
-  * Ability to "take" / "drop"  items from locations.
+  * Ability to "drop"  items from locations.
   * More ability to control reachable locations (ie add and remove edges from the graph).
   * NPCs at locations.  
   * Some rudimentary interaction for NPC’s and items.   
