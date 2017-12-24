@@ -55,7 +55,7 @@ public class NodeList {
 
 	}
 
-	public int[][] paths() {
+	protected int[][] paths() {
 		//list of all the edges using indexes instead of names
 		//ArrayList<String> tempEdges = new ArrayList<>();
 
@@ -98,6 +98,8 @@ public class NodeList {
 		return nodes.get(index).getName();
 	}
 
+
+        
 	private ArrayList<Node> loadNodes(String filename) {
 		ArrayList<Node> newNodesList = new ArrayList<>();
 

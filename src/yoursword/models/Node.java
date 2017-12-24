@@ -16,7 +16,7 @@ import yoursword.items.*;
 public class Node {
 
     ArrayList<Item> items = new ArrayList<>();
-
+    Inventory itemsList = new Inventory();
     private String name;
     private ArrayList<String> edges;
     private int edgecount;
@@ -49,7 +49,7 @@ public class Node {
         this.edges = new ArrayList(Arrays.asList(edges));
         this.description = description;
         edgecount = edges.length;
-        this.items.addAll(parseItemList(item));
+        this.itemsList.addStringArray(item);
 
     }
 
@@ -100,21 +100,21 @@ public class Node {
         }
     }
 
-    private ArrayList<Item> parseItemList(String[] items) {
-        ArrayList<Item> itemList = new ArrayList<>();
-        for (String each : items) {
-            switch (each) {
-                case "Water":
-                    itemList.add(new Water(1));
-                    break;
-                case "FilthySock":
-                    itemList.add(new FilthySock(1));
-                    break;
-
-            }
-        }
-
-        return itemList;
-    }
+//    private ArrayList<Item> parseItemList(String[] items) {
+//        ArrayList<Item> itemList = new ArrayList<>();
+//        for (String each : items) {
+//            switch (each) {
+//                case "Water":
+//                    itemList.add(new Water(1));
+//                    break;
+//                case "FilthySock":
+//                    itemList.add(new FilthySock(1));
+//                    break;
+//
+//            }
+//        }
+//
+//        return itemList;
+//    }
 
 }
