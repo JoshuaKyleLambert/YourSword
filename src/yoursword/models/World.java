@@ -6,6 +6,8 @@
 package yoursword.models;
 
 import java.util.ArrayList;
+import java.util.Map;
+import java.util.Set;
 
 /**
  *
@@ -66,10 +68,14 @@ public class World {
      * @param Location world location to take from
      * @param itemName item you wish to take from location
      * @return the item taken. null if doesnt exist?
-     * 
+     *
      */
     public Item take(int Location, String itemName) {
-        return data.getNodeInventory(Location).get(itemName);
+        Item item = data.getNodeInventory(Location).get(itemName);
+        data.getNodeInventory(Location).remove(item);
+        
+        return item;
+        
     }
 
     /**
@@ -87,11 +93,11 @@ public class World {
         return data.getDescription(location);
     }
 
-    /*Can't list items at other locations
-        * or can you?
+    /**
+     * print the list of items contained at the location.
+     * @param location 
      */
     public void printItems(int location) {
-        data.getItemList(location).forEach(e -> System.out.println(e));
-
+        data.getNodeInventory(location).toString();
     }
 }

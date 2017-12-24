@@ -66,12 +66,13 @@ public class Inventory {
             Item inventoryItem = invList.get(item.getName());
             int qty = inventoryItem.getQuantity();
 
-            if (qty - item.getQuantity() <= 0) {
-                remove(item);
-            } else {
-                inventoryItem.setQuantity(qty - item.getQuantity());
-            }
+            invList.remove(item.getName());
 
+//            if (qty - item.getQuantity() <= 0) {
+//                
+//            } else {
+//                inventoryItem.setQuantity(qty - item.getQuantity());
+//            }
         } else {
             System.out.println("That cannot be removed. It is not in inventory.");
         }
@@ -85,9 +86,11 @@ public class Inventory {
     public Set getentrySet() {
         return invList.entrySet();
     }
-    public ArrayList<Item> getItems(){
-        return (ArrayList)invList.values();
+
+    public ArrayList<Item> getItems() {
+        return (ArrayList) invList.values();
     }
+
     /**
      * Creates instances of names items and adds them to inventory.
      *
@@ -109,8 +112,25 @@ public class Inventory {
 
             }
         }
-        
+
         return true;
     }
 
+    @Override
+    public String toString() {
+        Set<Map.Entry<String, Item>> entrySet = invList.entrySet();
+        StringBuilder string = new StringBuilder();
+        StringBuilder returnstring = new StringBuilder();
+        // Get key and value from each entry
+        for (Map.Entry<String, Item> entry : entrySet) {
+            string.append(entry.getValue().getQuantity()).append("  ").append(entry.getValue().getDescription()).append(" ").append(entry.getKey());
+            System.out.println(string.toString());
+
+            returnstring.append(string).append("\n");
+            string.delete(0, string.length());
+
+        }
+
+        return string.toString();
+    }
 }
