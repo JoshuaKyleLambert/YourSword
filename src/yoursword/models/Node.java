@@ -87,7 +87,8 @@ public class Node {
     }
 
     public ArrayList<Item> itemList() {
-        return items;
+       
+        return itemsList.getItems();
     }
 
     public void addItem(Item item) {
@@ -100,6 +101,9 @@ public class Node {
         }
     }
 
+    public Inventory getInventory(){
+        return itemsList;
+    }
 //    private ArrayList<Item> parseItemList(String[] items) {
 //        ArrayList<Item> itemList = new ArrayList<>();
 //        for (String each : items) {

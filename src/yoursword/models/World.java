@@ -65,15 +65,11 @@ public class World {
      *
      * @param Location world location to take from
      * @param itemName item you wish to take from location
-     * @return the item taken.
+     * @return the item taken. null if doesnt exist?
+     * 
      */
     public Item take(int Location, String itemName) {
-        ArrayList<Item> list = data.getItemList(Location);
-
-        Item item = list.get(list.indexOf(itemName));
-        list.remove(item);
-        return item;
-
+        return data.getNodeInventory(Location).get(itemName);
     }
 
     /**

@@ -97,7 +97,9 @@ public class NodeList {
 
 		return nodes.get(index).getName();
 	}
-
+        public Inventory getNodeInventory(int index){
+            return nodes.get(index).getInventory();
+        }
 
         
 	private ArrayList<Node> loadNodes(String filename) {

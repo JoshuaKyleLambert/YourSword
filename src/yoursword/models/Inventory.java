@@ -85,7 +85,9 @@ public class Inventory {
     public Set getentrySet() {
         return invList.entrySet();
     }
-
+    public ArrayList<Item> getItems(){
+        return (ArrayList)invList.values();
+    }
     /**
      * Creates instances of names items and adds them to inventory.
      *
@@ -107,7 +109,7 @@ public class Inventory {
 
             }
         }
-
+        
         return true;
     }
 
