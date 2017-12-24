@@ -16,32 +16,26 @@ public class Game {
     World map;
     Avatar player;
     Scanner input = new Scanner(System.in);
-    //NodeList adventure = new NodeList("MySword.ysa");
 
     public Game() {
         map = new World();
         System.out.print("Player, What is your name? ");
         String name = input.next();
-        String filepath;
 
         while (name.length() > 12) {
             System.out.print("Player, What is your (short) name? ");
             name = input.next();
         }
 
-        //System.out.print("Load adventure? D for default.");
-        //	filepath = input.next();
-        //	if (filepath.equals("D"))
-        //map = new World();
-        //	else map = new World(filepath);
-        System.out.println("Welcome to\n\n-----====|8--  My Sword  --8|====-----\n\n"
-                + name + " your adventure is about to begin.\n\n"
-                + "Type \"help\" for some useful information.\n\n");
-
         player = new Avatar(name); // Create the player with a name
-        player.setCurrentLocation(0);
+        player.setCurrentLocation(1);
+        
+//        System.out.println("Welcome to\n\n-----====|8--  My Sword  --8|====-----\n\n"
+//                + name + " your adventure is about to begin.\n\n"
+//                + "Type \"help\" for some useful information.\n\n");
 
-        map.printCurrentLocation(player.getCurrentLocation());
+
+        System.out.print("\n\n" + map.look(0));
         // Initialize Avatar, name , current location.. etc	
 
         start(); // Start the game

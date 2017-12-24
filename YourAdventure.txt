@@ -1,3 +1,26 @@
+YourSword
+
+                    Welcome to Your Sword
+             a story, an adventure an experience.
+
+
+
+
+                    _____   _____
+                   / #   \ /     \
+              ,   |       '       |
+              I __L________       L_________________
+         O====IE__________/     ./__________________>
+              I      \.       ./
+              `        \.   ./
+                         \ /
+                          '  
+
+
+
+
+
+###
 Gates,Forest,Toren's_House,Tavern
 Water,FilthySock
 
