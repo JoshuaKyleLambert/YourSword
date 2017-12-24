@@ -61,22 +61,18 @@ public class Inventory {
      *
      * @param item
      */
-    public void remove(Item item) {
-        if (invList.containsKey(item.getName())) {
-            Item inventoryItem = invList.get(item.getName());
-            int qty = inventoryItem.getQuantity();
-
-            invList.remove(item.getName());
-
-//            if (qty - item.getQuantity() <= 0) {
-//                
-//            } else {
-//                inventoryItem.setQuantity(qty - item.getQuantity());
-//            }
+    public Item remove(Item item) {
+        if (item != null) {
+            if (invList.containsKey(item.getName())) {
+                return invList.remove(item.getName());
+            } else {
+                System.out.println("That cannot be removed. It is not in inventory.");
+            }
         } else {
-            System.out.println("That cannot be removed. It is not in inventory.");
+            System.out.println("Null object passed to remove.");
         }
 
+        return null;
     }
 
     public Item get(String itemName) {
@@ -121,7 +117,7 @@ public class Inventory {
         Set<Map.Entry<String, Item>> entrySet = invList.entrySet();
         StringBuilder string = new StringBuilder();
         StringBuilder returnstring = new StringBuilder();
-      
+
         // Get key and value from each entry
         for (Map.Entry<String, Item> entry : entrySet) {
             string.append(entry.getValue().getQuantity()).append("  ")

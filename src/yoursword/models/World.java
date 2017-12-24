@@ -55,15 +55,14 @@ public class World {
      *
      * @param Location world location to take from
      * @param itemName item you wish to take from location
-     * @return the item taken. null if doesnt exist?
+     * @return the item taken. null if doesn't exist.
      *
      */
     public Item take(int Location, String itemName) {
         Item item = data.getNodeInventory(Location).get(itemName);
         data.getNodeInventory(Location).remove(item);
-        
+
         return item;
-        
     }
 
     /**
@@ -83,7 +82,8 @@ public class World {
 
     /**
      * print the list of items contained at the location.
-     * @param location 
+     *
+     * @param location
      */
     public void printItems(int location) {
         data.getNodeInventory(location).toString();

@@ -101,7 +101,12 @@ public class NodeList {
             return nodes.get(index).getInventory();
         }
 
-        
+        /**
+         * This nasty little method loads file and creates the array list
+         * of nodes for world.
+         * @param filename
+         * @return NodeList
+         */
 	private ArrayList<Node> loadNodes(String filename) {
 		ArrayList<Node> newNodesList = new ArrayList<>();
 

@@ -82,9 +82,29 @@ public class Game {
     }
 
     private void clearScreen() {
-        for (int i = 0; i < 24; i++) {
-            System.out.println();
+//        for (int i = 0; i < 24; i++) {
+//            System.out.println();
+//        }
+        
+         try
+    {
+        final String os = System.getProperty("os.name");
+
+        if (os.contains("Windows"))
+        {
+            Runtime.getRuntime().exec("cls");
         }
+        else
+        {
+            Runtime.getRuntime().exec("clear");
+        }
+    }
+    catch (final Exception e)
+    {
+        //  Handle any exceptions.
+    }
+
+        
     }
 
     private boolean doIfCommand(String command) {
