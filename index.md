@@ -31,3 +31,4 @@ To Do
   * Ability to add / remove items from inventory.  
   * A battle (damage or repair, hit or miss) as well as some armor, class system, or randomization.  
   * System for making choices.
+  * A parent Entity class might be needed.
