@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author joshua
+ * @author joshua kyle lambert
  */
 public class Game {
 
@@ -26,19 +26,15 @@ public class Game {
             System.out.print("Player, What is your (short) name? ");
             name = input.next();
         }
-
-        player = new Avatar(name); // Create the player with a name
+        // Create the player with a name
+        player = new Avatar(name);
         player.setCurrentLocation(1);
-        
-//        System.out.println("Welcome to\n\n-----====|8--  My Sword  --8|====-----\n\n"
-//                + name + " your adventure is about to begin.\n\n"
-//                + "Type \"help\" for some useful information.\n\n");
 
-
+        //Display the first location to be used as a Title
         System.out.print("\n\n" + map.look(0));
-        // Initialize Avatar, name , current location.. etc	
 
-        start(); // Start the game
+        // Start the game
+        start();
 
     }
 
@@ -57,6 +53,7 @@ public class Game {
         System.out.printf("Health:%1$s Armor:%2$s Magic:%3$s\n\n", player.getHealth(), player.getArmor(), player.getMagic());
     }
 
+    //I'm quite sure there is a design pattern I should be using here.
     private void prompt() {
         String command;
         status();
@@ -82,36 +79,27 @@ public class Game {
     }
 
     private void clearScreen() {
-//        for (int i = 0; i < 24; i++) {
-//            System.out.println();
-//        }
-        
-         try
-    {
-        final String os = System.getProperty("os.name");
 
-        if (os.contains("Windows"))
-        {
-            Runtime.getRuntime().exec("cls");
+        try {
+            final String os = System.getProperty("os.name");
+
+            if (os.contains("Windows")) {
+                Runtime.getRuntime().exec("cls");
+            } else {
+                Runtime.getRuntime().exec("clear");
+            }
+        } catch (final Exception e) {
+            //  Handle any exceptions.
         }
-        else
-        {
-            Runtime.getRuntime().exec("clear");
-        }
-    }
-    catch (final Exception e)
-    {
-        //  Handle any exceptions.
+
     }
 
-        
-    }
     /**
-     * The doIfCommand method captures user input.  The knot that ties interaction
-     * and objects together is here.
-     * 
+     * The doIfCommand method captures user input. The knot that ties
+     * interaction and objects together is here.
+     *
      * @param command
-     * @return 
+     * @return
      */
     private boolean doIfCommand(String command) {
         switch (command) {
@@ -161,13 +149,13 @@ public class Game {
             case "drop":
                 System.out.println("Drop what?");
                 item = player.getInventory().get(command = input.next());
-                if (item != null){
+                if (item != null) {
                     player.getInventory().remove(item);
-                map.leave(player.getCurrentLocation(), item);
+                    map.leave(player.getCurrentLocation(), item);
                 } else {
                     System.out.println("You cannot drop " + command + " if you don't have " + command + ".");
                 }
-                
+
                 break;
             case "where":
                 clearScreen();
