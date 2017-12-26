@@ -1,6 +1,5 @@
 ---
 title: "First Post"
-date: "2017-26-12 02:00:52 -0500"
 author: joshua
 version: 1.0.0
 ---
