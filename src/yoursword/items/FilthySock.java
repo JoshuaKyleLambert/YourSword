@@ -16,7 +16,7 @@ import yoursword.models.Item;
 public class FilthySock extends Item{
 
 	public FilthySock(Integer quantity) {
-		super("FilthySock", quantity, "very worn partially decayed"
+		super("FilthySock", quantity, "Very worn partially decayed"
 			+ " biologically active, dont eat this ");
 	}
 
