@@ -1,8 +1,0 @@
-theme: jekyll-theme-dinky
-url: http:/joshuakylelambert.github.io
-source:     .
-collections_dir: .
-posts_dir:      ./_posts
-collections:
-  posts:
-    output:   true
