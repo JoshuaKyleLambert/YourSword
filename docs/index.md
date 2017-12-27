@@ -22,7 +22,8 @@ To Do
   * Make item usage make sense. 
   * More ability to control reachable locations (ie add and remove edges from the graph).
   * NPCs at locations.  
-  * Identify those places where design patterns should be used.
+  * Identify those places where design patterns should be used. 
+    * strategy pattern to govern how items can be used.
   * Change to directed acyclic graph implementation for added versatility.
   * Some rudimentary interaction for NPC’s and items.   
   * Ability to add “paths” and items to locations through item/location/npc interactions.  
