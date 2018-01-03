@@ -4,6 +4,7 @@ title: "First Post"
 date: "2013-05-06 02:12:52 +0200"
 author: parkr
 version: 1.0.0
+published: true
 ---
 
 lets se if a post witll wwork
