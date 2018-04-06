@@ -1,28 +1,41 @@
 YourSword
 
-                    Welcome to Your Sword
-             a story, an adventure an experience.
-
-
-
-
-                    _____   _____
-                   / #   \ /     \
-              ,   |       '       |
-              I __L________       L_________________
-         O====IE__________/     ./__________________>
-              I      \.       ./
-              `        \.   ./
-                         \ /
-                          '  
-
-
-
+                    Welcome to The Purgatory
+             a story, an adventure ,an experience.
+                                        
+                                    |
+                                   ,|,
+                                   |||
+                                  / | \
+                                  | | |
+                                  | | |
+                                 /  |  \
+                                 |  |  |
+                                 |  |   \
+                                /    \  |
+                                |    |  |
+                                |    |   \
+                               /     |   |
+                8              |     |   |
+              ""8""           /      |    \
+                8            /        \   ,\
+              ,d8888888888888|========|="" |
+            ,d"  "88888888888|  ,aa,  |  a |
+          ,d"      "888888888|  8  8  |  8 |
+       ,d8888888b,   "8888888|  8aa8  |  8,|
+     ,d"  "8888888b,   "88888|========|="" |
+   ,d"      "8888888b,   "888|  a  a  |  a |
+ ,d"   ,aa,   "8888888b,   "8|  8  8  |  8,|
+/|    d"  "b    |""""""|     |========|="" |
+ |    8    8    |      |     |  ,aa,  |  a |
+ |    8aaaa8    |      |     |  8  8  |  8 |
+ |              |      |     |  """"  | ,,=|
+ |aaaaaaaaaaaaaa|======"""""""""""""""""
 
 
 ###
-Gates,Forest,Toren's_House,Tavern
-Water,FilthySock
+Gates,TownSquare
+Water
 
          
                      ___====-_  _-====___ 
@@ -41,37 +54,201 @@ Water,FilthySock
                        <(  | |  | |  )>             
                       <__\_| |  | |_\__>           
                       ^^^^ ^^^  ^^^ ^^^^^
-The gates to the city. Nothing unusual here except that they're
-new. Everyone pictures gates in medevil times as being old 
-rusted looking things. They had to be new once and these are.
-Big ass dragon statue. 
+Gates
+You find yourself in the center of an opening in a wall. As
+you silently walk foward you see the wall  stretch from
+the horizon to horizon and a big city before you. The streets
+stretch across the Earth, twisting and turning through each  
+other until it reaches its end point. The Castle, which is to
+your NorthWest and far in the distance. Ahead of you is a
+winding street straight to what seems to be the center of 
+the city, the TownSquare. Above the Gate's Entry way is a
+huge statue of a dragon looking over the city's streets and
+allyways. You dig your hand into your pocket and find a
+peice of paper with scribbled symbols on it. you can't read
+the writing but somehow you know the writing is important.
+You don't know where you are or how you got here? What path do you
+take?
 ###
-Forest,Gates,Toren's_House,Tavern
+Forest,Well,School,Dark_Cave
 Water,Water
+Forest   ___..._
+    _,--'       "`-.
+  ,'.  .            \
+,/:. .     .       .'
+|;..  .      _..--'
+`--:...-,-'""\
+        |:.  `.
+        l;.   l
+        `|:.   |
+         |:.   `.,
+        .l;.    j, ,
+     `. \`;:.   //,/
+      .\\)`;,|\'/(
+       ` `itz `(,
+
 The Forest is a thing of legend. Spanning for unknown distances 
-to the east, it's massive trees providing a thick canopy causing the
-forest floor below to exist in a perpetual twilight. There is always
-a faint glow emanating from the various bioluminecent plant life.
-with a little time it's possible see through the darkness.
-There exits patches where there is no light at all.
+to the south and around the walls of the kingdom, it's massive 
+trees providing a thick canopy causing the forest floor below to
+exist in a perpetual twilight. There is always a faint gloww 
+emanating from the various bioluminecent plant life. With a 
+little time your eyes may ajust to the darkness but you don't have 
+time. You struggle to walk in a straight direction, let alone the 
+right one. With the help of your eyes finally ajusting and the low
+glow of the mushrooms and fungi you find a path thats leads 
+somewhere. You follow the path and come to realize you yourself 
+are covered in a glowing goo that eluminates your path better.You 
+come into a fork in the path, with one way growiing darker into
+what seems to be a cave and one way that, as far as you can see,
+holds a well on top of a grassy hill. Where should you go? 
+slowly growing lighter. What path do you take?
 ###
-Tavern,Forest,Toren's_House
-Water,
-This place is a real shit hole.
+Library,TownSquare,School
+Water
+Library
+||.--.    .-._                        .----.             ||
+|||==|____| |H|___            .---.___|""""|_____.--.___ ||
+|||  |====| | |xxx|_          |+++|=-=|_  _|-=+=-|==|---|||
+|||==|    | | |   | \         |   |   |_\/_|Black|  | ^ |||
+|||  |    | | |   |\ \   .--. |   |=-=|_/\_|-=+=-|  | ^ |||
+|||  |    | | |   |_\ \_( oo )|   |   |    |Magus|  | ^ |||
+|||==|====| |H|xxx|  \ \ |''| |+++|=-=|""""|-=+=-|==|---|||
+||`--^----'-^-^---'   `-' ""  '---^---^----^-----^--^---^||
+||-------------------------------------------------------||
+||-------------------------------------------------------||
+The Library smells of old paper and tattered leather. As you look 
+around you see it is almost completely abandoned but for an old 
+man organizing shelves of books. Rows and rows of shelves create 
+a labrynth of books and words. Paper litters the floor, containing
+some kind of writing or symbols. You quietly walk towards the man 
+but he turns, right before you were about to tap on his shoulder. 
+In suprise he jumps and shouts "Oye! You shouldn't scare a poor old 
+man like that! I was frightened to death!" He speaks to you in a odd,
+old ascent that you can't seem to pin point. After his proclimation 
+he walks around you and hurries on to his buisness. "If your a theif,
+I have nothing to sell. You might want to try the Tavern next door."
+The old man say. You gesture to the note you have in your hand and
+explain your situation with the the writing. he mutters something about 
+bad school systems before taking the note and studying it. "The School
+holds all the answers." he says. He laughs a bit before handing you
+the note and going back to his book organizing. You look at the
+scribbling symbols before a man shoves the door to the Library aside,
+sending dust flying in the air. The man speaks your name in a odd tone
+that suggests anything but friendlyness. Your instincts tell you to
+run and your feet take over, carrying you to the back door and out
+into the fresh air and big sun. In front of you is a path up a hill 
+and to what looks like a School and behind you is an allyway you could
+take to get to the TownSquare. Which path do you take?
 ###
-Toren's_House,Forest,Gates,Tavern,Toren's_Room,Toren's_Kitchen
-Water,
-Torens House is the place to be apparently.
-###
-Toren's_Room,Toren's_House
+School,Tavern,Library,Forest
 Water,Water
-Smells like passion..
+School
+A tanned dirt path makes it's way up a small hill with grass covering
+every surface. Children jump and play in front of the tall building
+The only adult in sight is a elderly woman standing by the double doors,
+supervising the children's fun and playfulness. As you walk up the path 
+children run to your tired and slumped form. They crowd around you but
+let you pass as you walk along the path to the teacher. When she notices 
+you, she walks down and stops right infront of you, patting a childs hair
+absent-mindedly. You tell her what had happened and give her the note. 
+She reads it over and then looks up at you in amusment. "You don't know
+where you are? Do you?" She asks in the wise tone of a teacher. You tell
+her no and she grins alittle. "Down the path is a Forest and beyond your
+final choice." around her the children cheered and went on playing their 
+games of fun. From such a cruel world of the mean, man that spoke your 
+name to the innocence of the small kids. You walk past them as they run 
+circles around you like a pole. You reache the Forest's perimeter. It's
+shadows creeping into the scene of green grass and a school yard. You 
+give the teacher one last glance and when she nods at you from across
+the grounds, you- What path do you take?
 ###
-Toren's_Kitchen,Toren's_House
+Tavern,TownSquare,School
+Water
+Tavern         . .
+       .. . *.
+- -_ _-__-0oOo
+ _-_ -__ -||||)
+    ______||||______
+~~~~~~~~~~`""'
+As  you walk in you see rotting floor boards and mostly broken
+chairs and tables. Dead insects litters the floor and you try not 
+to barf at the smell of alcohole and shit. You walk around the dead 
+organisms and try to avoid the drunk hobo's that scatter the bar.
+You walk up to the Bartender and getsure to the note. He looks at 
+you sceptically but read the note anyway and translates. "The 
+school holds all the answers." The Bartender chuckles a bit before 
+wiping a bottle. A silence falls over the Tavern, not uneasily or 
+creepily but a sort comforting silence. People scurry outside, but
+the walls muffle the noise and you feel at ease for a moment. Well, 
+just then a man bursts through the door of the tavern,penatrating 
+the blissful quiet and creating chaos in the Tavern. The man that 
+burst through the door shouts out your name and everyone looks around 
+to see who he means. You slowly walk backwards and into the crowd 
+before anyone can figure out it's you. The Bartender yells for you too,
+suddenlyn they all start to shout your name, their drunk brains taking 
+over. You start to run now as people start to notice your not chanting
+and run after you. Pounding steps follow you as you jump above the bar 
+and run for the back door. You shove open the door and start to run but 
+as you run a man throughs a rock at your head. Your head starts to 
+pound and you can feel a liquid pouring down your face. You can either 
+go to the school or go around the Tavern and into the TownSquare. 
+What path do you take?      
+###
+Well,Forest
 Water,Water
-Insects scurry away from the movement as you enter the grime covered
-room once used to prepare meals. Now this is abandoned portion of
-the house is used to store piles of dishes and togo boxes that wait
-for someone to care for them. No one cares in Toren's house.
-Abandon hope all ye who enter here.
+Well
+In front of you is a well, settled on a small hill.As you walk into
+the sunlight you take a step back and wait for your eyes to adjust
+to the sunny environment. As you start to see again you take a closer
+glance and see the crevices of the base of the well. After rubbing your
+eyes a few times you realize the image infront of you is real. Purple, 
+dark blue, and black with white sparkling dust peaking through the 
+rocks of the well. As if the galazy itself was just a couple footsteps
+away. You walk closer and look inside the well, half expecting to see 
+the Milky Way looking back up at you. Blackness crawls up the well with 
+it's dark claws, and no galaxy or space of any kind is to be found. You 
+step back and look at the Forest with a sort of longing but it's
+claws seem just as dark and just as sharp.
+###
+TownSquare,Library,Gates,Tavern
+Water,Water
+TownSquare
+Bustling carts and people run in all direction as you try to get past 
+the crowds of people. In the middle of the TownSquare a fountain sprays
+water at small kids running around it as if it were the best thing they
+had ever seen. To be honest, I think it is. The same scribbles one the
+note are written across the fountains base and you can see a mother
+reading the words to a small child. The writting's origin must be here
+then, you think. Peddlers shout out their deals and wares as the
+customers pass them by, not showing them any mind. To your left is
+what looks like a Tavern. Drunks lay against the establishment and
+broken glass surrounds the buildings outer perimeter. To your right
+is a Library as the sign above the door indicates with a book carves 
+and painted on the wood. You can almost smell the dusty books from here. 
+What path do you take? 
+###
+Dark_Cave,Forest
+Water,Water
+Dark_Cave
+Darkness encircles you and the eluminecant plants and fungi that had made
+your path easier were all gone and behind you. you beside you, you can't
+quiet tell which was is which. You stumble and fall many times before you 
+feel hard rock under your touch. All the sudden torches blaze and you see
+a cave ahead of you. As you walk in you see painting on the wall as if the 
+Indians were here and had left him a message. Somehow you can ready the 
+stories on the wall better than the filthy note. It said "A long, long 
+time people who died either went straight to the Heavens or straight to 
+Hell. Aftertimes passed people became harder to split up and the angels 
+didn't know how to choose who went where. So they made a place called 
+'The Purgatory'. A place where the angels put you through tests of 
+bravery, strength, care, and intelligence ,but above all love. Not only 
+has your spirit passed this test but you went through the obstical of 
+intelligence with escaping the man that called your name. You showed 
+your caring with the way you expressed your emotions towards others and
+your surroundings. You prooved your bravery by going into the dark path
+instead of the path to the 'Well of Hell' and you showed you love with 
+the way you beleived the teacher, the way you asked the old man about
+the note and the faith you put in them. And the way you are still here.
+Welcome to the 'Cave of Heaven'." Infront of you large gates open to a 
+shining, golden light that washes over you and you find peace.
 ###
