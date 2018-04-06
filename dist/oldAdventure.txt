@@ -1,0 +1,77 @@
+YourSword
+
+                    Welcome to Your Sword
+             a story, an adventure, an experience.
+
+
+
+
+                    _____   _____
+                   / #   \ /     \
+              ,   |       '       |
+              I __L________       L_________________
+         O====IE__________/     ./__________________>
+              I      \.       ./
+              `        \.   ./
+                         \ /
+                          '  
+
+
+
+
+
+###
+Gates,Forest,Toren's_House,Tavern
+Water,FilthySock
+
+         
+                     ___====-_  _-====___ 
+              __--^^^      //     \\     ^^^--_
+             _-^         // (    ) \\         ^-_
+            -           //  |\^^/|  \\           -
+          _/           //   (0::0)   \\            \_
+         /            ((     \\//     ))             \ 
+       -               \\    (oo)    //               -
+      -                 \\  / \/ \  //                 -
+     -                   \\/      \//                   -
+   / /|           /\      (        )      /\           |\ \
+   |/ | /\_/\_/\_/  \_/\  (   /\   )  /\_/  \_/\_/\_/\ | \|
+   `  |/  V  V  `    V  \_(| |  | |)_/  V    '  V  V  \|  '
+      `   `  `       `   / | |  | | \   '       '  '   '
+                       <(  | |  | |  )>             
+                      <__\_| |  | |_\__>           
+                      ^^^^ ^^^  ^^^ ^^^^^
+The gates to the city. Nothing unusual here except that they're
+new. Everyone pictures gates in medevil times as being old 
+rusted looking things. They had to be new once and these are.
+Big ass dragon statue. 
+###
+Forest,Gates,Toren's_House,Tavern
+Water,Water
+The Forest is a thing of legend. Spanning for unknown distances 
+to the east, it's massive trees providing a thick canopy causing the
+forest floor below to exist in a perpetual twilight. There is always
+a faint glow emanating from the various bioluminecent plant life.
+with a little time it's possible see through the darkness.
+There exits patches where there is no light at all.
+###
+Tavern,Forest,Toren's_House
+Water,
+This place is a real shit hole.
+###
+Toren's_House,Forest,Gates,Tavern,Toren's_Room,Toren's_Kitchen
+Water,
+Torens House is the place to be apparently.
+###
+Toren's_Room,Toren's_House
+Water,Water
+Smells like passion..
+###
+Toren's_Kitchen,Toren's_House
+Water,Water
+Insects scurry away from the movement as you enter the grime covered
+room once used to prepare meals. Now this is abandoned portion of
+the house is used to store piles of dishes and togo boxes that wait
+for someone to care for them. No one cares in Toren's house.
+Abandon hope all ye who enter here.
+###
